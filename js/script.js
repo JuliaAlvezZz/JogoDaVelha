@@ -62,10 +62,6 @@ function reiniciar(){
 	document.getElementById('op9').innerHTML=" ";
 }
 
-function trava(){
-
-}
-
 function escolheu(q){
 	if(trava===0){
 		switch(q){
