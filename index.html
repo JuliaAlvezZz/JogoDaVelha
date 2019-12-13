@@ -7,43 +7,43 @@
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body onload="inicio()">
-		<h1 align="center">Jogo da Velha</h1>
+		<h1 id="titulo" align="center">Jogo da Velha</h1>
 
 		<div class="grid center grid-template-columns-2">
 			<div class="grid grid-template-columns-1" id="jogo">
-				<div class="quadradinho" style="background-image: url('img/idoso1.jpg');" onclick="escolheu(1);">
+				<div class="quadradinho" id="quad1" style="background-image: url('img/tema0/idoso1.jpg');" onclick="escolheu(1);">
 					<label id="op1"></label>
 				</div>
 
-				<div class="quadradinho" id="quad2" style="background-image: url('img/idoso2.jpg');" onclick="escolheu(2);">
+				<div class="quadradinho" id="quad2" style="background-image: url('img/tema0/idoso2.jpg');" onclick="escolheu(2);">
 					<label id="op2"></label>
 				</div>
 
-				<div class="quadradinho" id="quad3" style="background-image: url('img/idoso3.jpg'); border-right: none;" onclick="escolheu(3);">
+				<div class="quadradinho" id="quad3" style="background-image: url('img/tema0/idoso3.jpg'); border-right: none;" onclick="escolheu(3);">
 					<label id="op3"></label>
 				</div>
 
-				<div class="quadradinho" id="quad4" style="background-image: url('img/idoso4.jpg');" onclick="escolheu(4);">
+				<div class="quadradinho" id="quad4" style="background-image: url('img/tema0/idoso4.jpg');" onclick="escolheu(4);">
 					<label id="op4"></label>
 				</div>
 
-				<div class="quadradinho" id="quad5" style="background-image: url('img/idoso5.jpg');" onclick="escolheu(5);">
+				<div class="quadradinho" id="quad5" style="background-image: url('img/tema0/idoso5.jpg');" onclick="escolheu(5);">
 					<label id="op5"></label>
 				</div>
 
-				<div class="quadradinho" id="quad6" style="background-image: url('img/idoso6.jpg'); border-right: none;" onclick="escolheu(6);">
+				<div class="quadradinho" id="quad6" style="background-image: url('img/tema0/idoso6.jpg'); border-right: none;" onclick="escolheu(6);">
 					<label id="op6"></label>
 				</div>
 
-				<div class="quadradinho" id="quad7" style="background-image: url('img/idoso7.jpg'); border-bottom: none;" onclick="escolheu(7);">
+				<div class="quadradinho" id="quad7" style="background-image: url('img/tema0/idoso7.jpg'); border-bottom: none;" onclick="escolheu(7);">
 					<label id="op7"></label>
 				</div>
 
-				<div class="quadradinho" id="quad8" style="background-image: url('img/idoso8.jpg'); border-bottom: none;" onclick="escolheu(8);">
+				<div class="quadradinho" id="quad8" style="background-image: url('img/tema0/idoso8.jpg'); border-bottom: none;" onclick="escolheu(8);">
 					<label id="op8"></label>
 				</div>
 
-				<div class="quadradinho" id="quad9" style="background-image: url('img/idoso9.jpg'); border-right: none; border-bottom: none;" onclick="escolheu(9);">
+				<div class="quadradinho" id="quad9" style="background-image: url('img/tema0/idoso9.jpg'); border-right: none; border-bottom: none;" onclick="escolheu(9);">
 					<label id="op9"></label>
 				</div>
 			</div>
@@ -54,6 +54,8 @@
 				<hr/>
 
 				<button onclick="reiniciar();" id="reiniciar">Reiniciar jogo</button>
+
+				<button onclick="mudaTema();" id="alterar">Alterar tema</button>
 
 				<h3>Vez:</h3>
 
