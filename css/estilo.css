@@ -18,7 +18,7 @@
 
 /*geral*/
 body{
-	background-image: url("../img/background.jpg");
+	background-image: url("../img/tema0/background.jpg");
 	background-size: 100%;
 	font-family: 'Courier', sans-serif;
 }
@@ -65,12 +65,12 @@ div#painel{
 }
 
 div#painel button#reiniciar{
-	margin-top: 20px;
 	background-color: green;
 	padding: 5px;
 	border: none;
 	border-radius: 8px;
 	color: white;
+	margin-bottom: 10px;
 	font-family: 'Courier', sans-serif;
 }
 
@@ -84,11 +84,30 @@ div#painel button#reiniciar:active{
 	color: white;
 }
 
+div#painel button#alterar{
+	background-color: blue;
+	padding: 5px;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	font-family: 'Courier', sans-serif;
+}
+
+div#painel button#alterar:hover{
+	background-color: red;
+	color: white;
+}
+
+div#painel button#alterar:active{
+	background-color: yellow;
+	color: black;
+}
+
 div#painel div#fim{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
 div#painel div#sobre{
-	margin-top: 30px;
+	margin-top: 15px;
 }

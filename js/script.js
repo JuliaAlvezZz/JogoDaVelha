@@ -1,4 +1,4 @@
-var vez, fim, v1, v2, v3, v4, v5, v6, v7, v8, v9;
+var vez, fim, v1, v2, v3, v4, v5, v6, v7, v8, v9, tema=0;
 
 function inicio(){
 	vez=1;
@@ -60,10 +60,6 @@ function reiniciar(){
 	document.getElementById('op7').innerHTML=" ";
 	document.getElementById('op8').innerHTML=" ";
 	document.getElementById('op9').innerHTML=" ";
-}
-
-function trava(){
-
 }
 
 function escolheu(q){
@@ -137,5 +133,55 @@ function escolheu(q){
 			document.getElementById("vencedor").innerHTML="<font color='green'>O Jogador "+vencedor+" ganhou!</font>";
 			trava=1;
 		}
+	}
+}
+
+function mudaTema(){
+	switch(tema){
+		case 0:
+			tema=1;
+			document.body.style.backgroundImage="url('img/tema1/background.jpg')";
+			document.getElementById("quad1").style.backgroundImage="url('img/tema1/idoso1.jpg')";
+			document.getElementById("quad2").style.backgroundImage="url('img/tema1/idoso2.jpg')";
+			document.getElementById("quad3").style.backgroundImage="url('img/tema1/idoso3.jpg')";
+			document.getElementById("quad4").style.backgroundImage="url('img/tema1/idoso4.jpg')";
+			document.getElementById("quad5").style.backgroundImage="url('img/tema1/idoso5.jpg')";
+			document.getElementById("quad6").style.backgroundImage="url('img/tema1/idoso6.jpg')";
+			document.getElementById("quad7").style.backgroundImage="url('img/tema1/idoso7.jpg')";
+			document.getElementById("quad8").style.backgroundImage="url('img/tema1/idoso8.jpg')";
+			document.getElementById("quad9").style.backgroundImage="url('img/tema1/idoso9.jpg')";
+			document.getElementById("titulo").innerHTML="Jogo da Velha Vida Loka";
+			document.body.style.fontFamily="Stencil";
+			break;
+		case 1:
+			tema=2;
+			document.body.style.backgroundImage="url('img/tema2/background.jpg')";
+			document.getElementById("quad1").style.backgroundImage="url('img/tema2/idoso1.jpg')";
+			document.getElementById("quad2").style.backgroundImage="url('img/tema2/idoso2.jpg')";
+			document.getElementById("quad3").style.backgroundImage="url('img/tema2/idoso3.jpg')";
+			document.getElementById("quad4").style.backgroundImage="url('img/tema2/idoso4.jpg')";
+			document.getElementById("quad5").style.backgroundImage="url('img/tema2/idoso5.jpg')";
+			document.getElementById("quad6").style.backgroundImage="url('img/tema2/idoso6.jpg')";
+			document.getElementById("quad7").style.backgroundImage="url('img/tema2/idoso7.jpg')";
+			document.getElementById("quad8").style.backgroundImage="url('img/tema2/idoso8.jpg')";
+			document.getElementById("quad9").style.backgroundImage="url('img/tema2/idoso9.jpg')";
+			document.getElementById("titulo").innerHTML="Jogo do Bebê";
+			document.body.style.fontFamily="Cooper";
+			break;
+		case 2:
+			tema=0;
+			document.body.style.backgroundImage="url('img/tema0/background.jpg')";
+			document.getElementById("quad1").style.backgroundImage="url('img/tema0/idoso1.jpg')";
+			document.getElementById("quad2").style.backgroundImage="url('img/tema0/idoso2.jpg')";
+			document.getElementById("quad3").style.backgroundImage="url('img/tema0/idoso3.jpg')";
+			document.getElementById("quad4").style.backgroundImage="url('img/tema0/idoso4.jpg')";
+			document.getElementById("quad5").style.backgroundImage="url('img/tema0/idoso5.jpg')";
+			document.getElementById("quad6").style.backgroundImage="url('img/tema0/idoso6.jpg')";
+			document.getElementById("quad7").style.backgroundImage="url('img/tema0/idoso7.jpg')";
+			document.getElementById("quad8").style.backgroundImage="url('img/tema0/idoso8.jpg')";
+			document.getElementById("quad9").style.backgroundImage="url('img/tema0/idoso9.jpg')";
+			document.getElementById("titulo").innerHTML="Jogo da Velha";
+			document.body.style.fontFamily="Courier";
+			break;
 	}
 }
